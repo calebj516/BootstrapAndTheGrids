@@ -44,9 +44,7 @@
               <a class="nav-link text-nowrap" href="/Grid1.html">Grid 1</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-nowrap" href="/Grid2.html"
-                >Grid 2</a
-              >
+              <a class="nav-link text-nowrap" href="/Grid2.html">Grid 2</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-nowrap" href="/Grid3.html">Grid 3</a>
@@ -55,7 +53,12 @@
               <a class="nav-link text-nowrap" href="/Grid4.html">Grid 4</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-nowrap active" aria-current="page" href="/Grid5.html">Grid 5</a>
+              <a
+                class="nav-link text-nowrap active"
+                aria-current="page"
+                href="/Grid5.html"
+                >Grid 5</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link text-nowrap" href="/Grid6.html">Grid 6</a>
@@ -76,15 +79,15 @@
 
     <main class="flex-shrink-0">
       <div class="container minHeight h-100">
-        <div class="row h-100">
-          <div class="col-3">
-            <h1 class="bg-secondary p-3 text-light h-100">Col One</h1>
+        <div class="row h-100 row-cols-1 row-cols-md-3 gy-1">
+          <div class="col col-md-3 order-last order-md-first">
+            <div class="bg-secondary p-3 text-light h-100">Col One</div>
           </div>
-          <div class="col">
-            <h1 class="bg-dark p-3 text-light h-100">Col Two</h1>
+          <div class="col col-md-6">
+            <div class="bg-dark p-3 text-light h-100">Col Two</div>
           </div>
-          <div class="col-3">
-            <h1 class="bg-secondary p-3 text-light h-100">Col Three</h1>
+          <div class="col col-md-3 order-first order-md-last">
+            <div class="bg-secondary p-3 text-light h-100">Col Three</div>
           </div>
         </div>
       </div>
