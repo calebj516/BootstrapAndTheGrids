@@ -44,9 +44,7 @@
               <a class="nav-link text-nowrap" href="/Grid1.html">Grid 1</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-nowrap" href="/Grid2.html"
-                >Grid 2</a
-              >
+              <a class="nav-link text-nowrap" href="/Grid2.html">Grid 2</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-nowrap" href="/Grid3.html">Grid 3</a>
@@ -61,7 +59,12 @@
               <a class="nav-link text-nowrap" href="/Grid6.html">Grid 6</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-nowrap active" aria-current="page" href="/Grid7.html">Grid 7</a>
+              <a
+                class="nav-link text-nowrap active"
+                aria-current="page"
+                href="/Grid7.html"
+                >Grid 7</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link text-nowrap" href="/Grid8.html">Grid 8</a>
@@ -75,8 +78,21 @@
     </nav>
 
     <main class="flex-shrink-0">
-      <div class="container"></div>
+      <div class="container-fluid minHeight h-100 mt-5">
+        <div class="row h-100 gy-2 row-cols-1 row-cols-md-2">
+          <div class="col col-md-12">
+            <div class="bg-secondary text-light p-3 h-100">Col One</div>
+          </div>
+          <div class="col col-md-6 order-last">
+            <div class="bg-dark text-light p-3 h-100">Col Two</div>
+          </div>
+          <div class="col col-md-6">
+            <div class="bg-secondary text-light p-3 h-100">Col Three</div>
+          </div>
+        </div>
+      </div>
     </main>
+
     <footer class="footer mt-auto py-3 bg-dark sticky-footer">
       <div class="container-fluid text-center">
         <span class="text-white">Bootstrap And The Grids By Caleb Jones</span>
